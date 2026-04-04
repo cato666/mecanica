@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mecánica Integral | Tu mecánico de confianza a domicilio</title>
+  <meta name="description" content="Servicio de mecánica a domicilio: cambio de aceite, diagnóstico, batería, frenos, revisión general e inspección pre compra. Agenda por WhatsApp." />
+  <style>
+    :root{
+      --primary:#0f4c81;
+      --primary-dark:#0b365b;
+      --accent:#25D366;
+      --bg:#f6f9fc;
+      --text:#1f2937;
+      --muted:#6b7280;
+      --card:#ffffff;
+      --border:#dbe5ef;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      color:var(--text);
+      line-height:1.5;
+      background-color:#eef4f9;
+      background-image:
+        linear-gradient(rgba(238,244,249,.58), rgba(238,244,249,.88)),
+        url("data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%201600%201000%22%3E%0A%20%20%3Cdefs%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22bg%22%20x1%3D%220%22%20x2%3D%221%22%20y1%3D%220%22%20y2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%230b365b%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%2245%25%22%20stop-color%3D%22%230f4c81%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%230a6aa1%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22accent%22%20x1%3D%220%22%20x2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%2325d366%22%20stop-opacity%3D%220.95%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%239af2b8%22%20stop-opacity%3D%220.65%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%3ClinearGradient%20id%3D%22light%22%20x1%3D%220%22%20x2%3D%221%22%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%220%25%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.38%22/%3E%0A%20%20%20%20%20%20%3Cstop%20offset%3D%22100%25%22%20stop-color%3D%22%23ffffff%22%20stop-opacity%3D%220.02%22/%3E%0A%20%20%20%20%3C/linearGradient%3E%0A%20%20%3C/defs%3E%0A%0A%20%20%3Crect%20width%3D%221600%22%20height%3D%221000%22%20fill%3D%22url%28%23bg%29%22/%3E%0A%0A%20%20%3C%21--%20bright%20sales%20glow%20--%3E%0A%20%20%3Ccircle%20cx%3D%221320%22%20cy%3D%22180%22%20r%3D%22260%22%20fill%3D%22%2325d366%22%20opacity%3D%220.22%22/%3E%0A%20%20%3Ccircle%20cx%3D%221450%22%20cy%3D%22120%22%20r%3D%22150%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.10%22/%3E%0A%20%20%3Ccircle%20cx%3D%221180%22%20cy%3D%22220%22%20r%3D%22180%22%20fill%3D%22%234fdc86%22%20opacity%3D%220.10%22/%3E%0A%0A%20%20%3C%21--%20diagonal%20dynamic%20shapes%20--%3E%0A%20%20%3Cpath%20d%3D%22M0%20830%20L760%20420%20L1040%20520%20L260%201000%20L0%201000%20Z%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.08%22/%3E%0A%20%20%3Cpath%20d%3D%22M620%200%20L1600%200%20L1600%20360%20L980%20520%20Z%22%20fill%3D%22%23ffffff%22%20opacity%3D%220.05%22/%3E%0A%20%20%3Cpath%20d%3D%22M930%200%20L1600%200%20L1600%20200%20L1070%20330%20Z%22%20fill%3D%22%2325d366%22%20opacity%3D%220.12%22/%3E%0A%0A%20%20%3C%21--%20speed%20lines%20--%3E%0A%20%20%3Cg%20opacity%3D%220.8%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-50%20760%20C250%20620%2C%20470%20560%2C%20760%20430%20S1280%20170%2C%201690%20280%22%20fill%3D%22none%22%20stroke%3D%22url%28%23light%29%22%20stroke-width%3D%226%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-80%20860%20C260%20730%2C%20550%20690%2C%20870%20560%20S1360%20330%2C%201700%20430%22%20fill%3D%22none%22%20stroke%3D%22url%28%23accent%29%22%20stroke-width%3D%224%22/%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-100%20930%20C250%20840%2C%20600%20810%2C%20960%20710%20S1450%20520%2C%201710%20620%22%20fill%3D%22none%22%20stroke%3D%22url%28%23light%29%22%20stroke-width%3D%223%22/%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C%21--%20commercial%20badge%20shapes%20--%3E%0A%20%20%3Cg%20opacity%3D%220.22%22%3E%0A%20%20%20%20%3Crect%20x%3D%221110%22%20y%3D%2280%22%20rx%3D%2222%22%20ry%3D%2222%22%20width%3D%22240%22%20height%3D%2270%22%20fill%3D%22%2325d366%22/%3E%0A%20%20%20%20%3Crect%20x%3D%221090%22%20y%3D%22165%22%20rx%3D%2218%22%20ry%3D%2218%22%20width%3D%22190%22%20height%3D%2246%22%20fill%3D%22%23ffffff%22/%3E%0A%20%20%3C/g%3E%0A%0A%20%20%3C%21--%20stylized%20car%20--%3E%0A%20%20%3Cg%20transform%3D%22translate%28980%2C370%29%22%20opacity%3D%220.20%22%3E%0A%20%20%20%20%3Cpath%20d%3D%22M-300%20120%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C-255%2038%20-185%20-18%20-70%20-18%0A%20%20%20%20%20%20%20%20%20%20%20%20%20H100%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C190%20-18%20248%2018%20290%2078%0A%20%20%20%20%20%20%20%20%20%20%20%20%20L362%2098%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C394%20107%20426%20132%20437%20176%0A%20%20%20%20%20%20%20%20%20%20%20%20%20L455%20245%0A%20%20%20%20%20%20%20%20%20%20%20%20%20H384%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C372%20194%20330%20154%20274%20154%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C218%20154%20176%20194%20164%20245%0A%20%20%20%20%20%20%20%20%20%20%20%20%20H-88%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C-100%20194%20-142%20154%20-198%20154%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C-254%20154%20-296%20194%20-308%20245%0A%20%20%20%20%20%20%20%20%20%20%20%20%20H-404%0A%20%20%20%20%20%20%20%20%20%20%20%20%20L-389%20176%0A%20%20%20%20%20%20%20%20%20%20%20%20%20C-380%20136%20-356%20126%20-300%20120%20Z%22%0A%20%20%20%20%20%20%20%20%20%20fill%3D%22%23ffffff%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22-198%22%20cy%3D%22245%22%20r%3D%2270%22%20fill%3D%22%23061c30%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22274%22%20cy%3D%22245%22%20r%3D%2270%22%20fill%3D%22%23061c30%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22-198%22%20cy%3D%22245%22%20r%3D%2232%22%20fill%3D%22%23dff7e8%22/%3E%0A%20%20%20%20%3Ccircle%20cx%3D%22274%22%20cy%3D%22245%22%20r%3D%2232%22%20fill%3D%22%23dff7e8%22/%3E%0A%20%20%20%20%3Crect%20x%3D%22-10%22%20y%3D%2240%22%20width%3D%22130%22%20height%3D%2244%22%20rx%3D%2212%22%20fill%3D%22%2325d366%22/%3E%0A%20%20%3C/g%3E%0A%3C/svg%3E");
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    .container{
+      width:min(1120px, 92%);
+      margin:0 auto;
+    }
+    header{
+      background:linear-gradient(135deg, rgba(255,255,255,.90) 0%, rgba(245,249,253,.82) 100%);
+      border-bottom:1px solid var(--border);
+      position:sticky;
+      top:0;
+      z-index:20;
+      backdrop-filter: blur(6px);
+    }
+    .nav{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:16px 0;
+      gap:16px;
+    }
+    .brand{
+      font-size:1.25rem;
+      font-weight:700;
+      color:var(--primary-dark);
+    }
+    .brand span{
+      display:block;
+      font-size:.9rem;
+      font-weight:400;
+      color:var(--muted);
+    }
+    .btn{
+      display:inline-block;
+      padding:14px 22px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:700;
+      transition:.2s ease;
+    }
+    .btn:hover{transform:translateY(-1px)}
+    .btn-primary{
+      background:var(--accent);
+      color:#fff;
+      box-shadow:0 14px 30px rgba(37,211,102,.28);
+    }
+    .btn-secondary{
+      background:var(--primary);
+      color:#fff;
+    }
+    .hero{
+      padding:72px 0 48px;
+      position:relative;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:10px 0 0 0;
+      background:
+        linear-gradient(90deg, rgba(11,54,91,.18), rgba(11,54,91,.04) 36%, rgba(255,255,255,0) 72%),
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,0));
+      border-radius:28px;
+      z-index:0;
+      pointer-events:none;
+    }
+    .hero .container{
+      position:relative;
+      z-index:1;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.2fr .8fr;
+      gap:28px;
+      align-items:center;
+    }
+    .badge{
+      display:inline-block;
+      background:#e8f1fb;
+      color:var(--primary-dark);
+      padding:8px 14px;
+      border-radius:999px;
+      font-size:.9rem;
+      font-weight:700;
+      margin-bottom:16px;
+    }
+    h1{
+      font-size:clamp(2rem, 4vw, 3.5rem);
+      line-height:1.08;
+      margin:0 0 18px;
+      color:var(--primary-dark);
+    }
+    .hero p{
+      font-size:1.08rem;
+      color:var(--muted);
+      margin:0 0 24px;
+    }
+    .hero-actions{
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px;
+      margin-bottom:24px;
+    }
+    .mini-list{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:10px;
+      padding:0;
+      margin:0;
+      list-style:none;
+    }
+    .mini-list li{
+      background:#fff;
+      border:1px solid var(--border);
+      padding:12px 14px;
+      border-radius:14px;
+      font-size:.95rem;
+    }
+    .hero-card{
+      background:rgba(255,255,255,.88);
+      border:1px solid var(--border);
+      border-radius:22px;
+      padding:24px;
+      box-shadow:0 18px 40px rgba(15,76,129,.08);
+    }
+    .hero-card h3{
+      margin-top:0;
+      color:var(--primary-dark);
+    }
+    .price-box{
+      background:#f7fbff;
+      border:1px solid var(--border);
+      padding:16px;
+      border-radius:16px;
+      margin:12px 0;
+    }
+    section{
+      padding:28px 0 56px;
+    }
+    .section-title{
+      text-align:center;
+      margin-bottom:28px;
+    }
+    .section-title h2{
+      font-size:2rem;
+      margin-bottom:10px;
+      color:var(--primary-dark);
+    }
+    .section-title p{
+      color:var(--muted);
+      max-width:720px;
+      margin:0 auto;
+    }
+    .grid-3{
+      display:grid;
+      grid-template-columns:repeat(3, minmax(0,1fr));
+      gap:18px;
+    }
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:22px;
+      box-shadow:0 10px 24px rgba(15,76,129,.05);
+    }
+    .card h3{
+      margin-top:0;
+      color:var(--primary-dark);
+      font-size:1.1rem;
+    }
+    .card-actions{
+      margin-top:16px;
+    }
+    .btn-service{
+      display:inline-block;
+      width:100%;
+      text-align:center;
+      padding:12px 16px;
+      border-radius:12px;
+      text-decoration:none;
+      font-weight:700;
+      background:#eef6ff;
+      color:var(--primary-dark);
+      border:1px solid var(--border);
+      transition:.2s ease;
+    }
+    .btn-service:hover{
+      transform:translateY(-1px);
+      background:#e2f1ff;
+    }
+    .benefits{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:18px;
+    }
+    .benefit{
+      background:#fff;
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+    }
+    .cta{
+      background:linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      color:#fff;
+      border-radius:24px;
+      padding:38px 28px;
+      text-align:center;
+      box-shadow:0 18px 40px rgba(15,76,129,.18);
+    }
+    .cta h2{margin-top:0;font-size:2rem}
+    .cta p{max-width:760px;margin:0 auto 20px;color:#eaf3fb}
+    footer{
+      padding:30px 0 50px;
+      text-align:center;
+      color:var(--muted);
+      font-size:.95rem;
+    }
+    .contact{
+      display:grid;
+      grid-template-columns:repeat(2, minmax(0,1fr));
+      gap:18px;
+    }
+    .highlight{
+      font-weight:700;
+      color:var(--primary-dark);
+    }
+
+    .services-carousel-section{
+      padding:10px 0 56px;
+    }
+    .carousel-shell{
+      position:relative;
+      background:rgba(255,255,255,.72);
+      border:1px solid var(--border);
+      border-radius:24px;
+      padding:22px 54px;
+      box-shadow:0 14px 34px rgba(15,76,129,.08);
+      overflow:hidden;
+    }
+    .carousel-track{
+      display:flex;
+      gap:18px;
+      overflow-x:auto;
+      scroll-snap-type:x mandatory;
+      scroll-behavior:smooth;
+      padding:4px 2px 8px;
+      scrollbar-width:none;
+    }
+    .carousel-track::-webkit-scrollbar{display:none}
+    .service-slide{
+      min-width:320px;
+      max-width:320px;
+      background:rgba(255,255,255,.94);
+      border:1px solid var(--border);
+      border-radius:20px;
+      overflow:hidden;
+      box-shadow:0 10px 24px rgba(15,76,129,.06);
+      scroll-snap-align:start;
+      flex-shrink:0;
+    }
+    .service-slide-image{
+      height:190px;
+      background:#edf5fb;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-bottom:1px solid var(--border);
+    }
+    .service-slide-image img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .service-slide-body{
+      padding:18px;
+    }
+    .service-slide-body h3{
+      margin:0 0 8px;
+      color:var(--primary-dark);
+      font-size:1.08rem;
+    }
+    .service-slide-body p{
+      margin:0;
+      color:var(--muted);
+      font-size:.98rem;
+    }
+    .carousel-btn{
+      position:absolute;
+      top:50%;
+      transform:translateY(-50%);
+      width:42px;
+      height:42px;
+      border:none;
+      border-radius:999px;
+      background:var(--primary);
+      color:#fff;
+      font-size:1.15rem;
+      font-weight:700;
+      cursor:pointer;
+      box-shadow:0 10px 20px rgba(15,76,129,.16);
+      z-index:2;
+    }
+    .carousel-btn:hover{background:var(--primary-dark)}
+    .carousel-btn.prev{left:10px}
+    .carousel-btn.next{right:10px}
+    .carousel-note{
+      text-align:center;
+      color:var(--muted);
+      margin-top:14px;
+      font-size:.94rem;
+    }
+
+    @media (max-width: 860px){
+      .hero-grid,.grid-3,.benefits,.contact{
+        grid-template-columns:1fr;
+      }
+      .carousel-shell{
+        padding:18px 18px 20px;
+      }
+      .carousel-btn{
+        display:none;
+      }
+      .service-slide{
+        min-width:84%;
+        max-width:84%;
+      }
+      .nav{flex-direction:column; align-items:flex-start}
+      .mini-list{grid-template-columns:1fr}
+      .hero{padding-top:42px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        Mecánica Integral
+        <span>Tu mecánico de confianza a domicilio</span>
+      </div>
+      <a class="btn btn-primary" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20de%20Mec%C3%A1nica%20Integral" target="_blank" rel="noopener noreferrer">
+        Cotizar por WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="badge">Atención mecánica a domicilio</div>
+          <h1>Menos tiempo perdido, más confianza para ti y tu vehículo</h1>
+          <p>
+            Servicio mecánico rápido, claro y a domicilio. Te ayudamos con mantenciones, diagnóstico,
+            batería, frenos e inspección pre compra para que tomes decisiones con mayor seguridad.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20agendar%20o%20cotizar%20un%20servicio" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
+            <a class="btn btn-secondary" href="#servicios">Ver servicios</a>
+          </div>
+          <ul class="mini-list">
+            <li>✅ Atención a domicilio</li>
+            <li>✅ Explicación clara y cercana</li>
+            <li>✅ Ficha de mantención por cliente</li>
+            <li>✅ Seguimiento y recordatorios</li>
+          </ul>
+        </div>
+
+        <div class="hero-card">
+          <h3>¿Qué servicio necesitas hoy?</h3>
+          <div class="price-box">
+            <strong>Cambio de aceite y filtros</strong><br />
+            Mantén tu vehículo al día y evita problemas mayores.
+          </div>
+          <div class="price-box">
+            <strong>Diagnóstico básico</strong><br />
+            Revisión inicial para detectar fallas y orientarte con claridad.
+          </div>
+          <div class="price-box">
+            <strong>Inspección pre compra</strong><br />
+            Revisa antes de comprar y evita gastos inesperados.
+          </div>
+          <p><span class="highlight">Agenda fácil:</span> escríbenos por WhatsApp con tu comuna, vehículo y servicio que necesitas.</p>
+          <a class="btn btn-primary" style="width:100%; text-align:center;" href="https://wa.me/56981285142?text=Hola%2C%20mi%20comuna%20es%20____%2C%20mi%20veh%C3%ADculo%20es%20____%20y%20necesito%20____" target="_blank" rel="noopener noreferrer">Solicitar atención</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="container">
+        <div class="section-title">
+          <h2>Servicios principales</h2>
+          <p>Una propuesta simple, clara y enfocada en resolver lo que más necesitan tus clientes.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>Cambio de aceite y filtros</h3>
+            <p>Servicio rápido para mantener el motor en buen estado y alargar la vida útil del vehículo.</p>
+            <div class="card-actions">
+              <a class="btn-service" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20o%20consultar%20por%20el%20servicio%20de%20Cambio%20de%20aceite%20y%20filtros." target="_blank" rel="noopener noreferrer">Consultar este servicio</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Diagnóstico básico</h3>
+            <p>Revisión inicial para identificar problemas comunes y orientarte sobre el siguiente paso.</p>
+            <div class="card-actions">
+              <a class="btn-service" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20o%20consultar%20por%20el%20servicio%20de%20Diagn%C3%B3stico%20b%C3%A1sico." target="_blank" rel="noopener noreferrer">Consultar este servicio</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Batería y arranque</h3>
+            <p>Apoyo en problemas de partida, revisión de batería y sistema básico de arranque.</p>
+            <div class="card-actions">
+              <a class="btn-service" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20o%20consultar%20por%20el%20servicio%20de%20Bater%C3%ADa%20y%20arranque." target="_blank" rel="noopener noreferrer">Consultar este servicio</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Frenos y revisión general</h3>
+            <p>Evaluación del estado general y de componentes críticos para conducir con más seguridad.</p>
+            <div class="card-actions">
+              <a class="btn-service" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20o%20consultar%20por%20el%20servicio%20de%20Frenos%20y%20revisi%C3%B3n%20general." target="_blank" rel="noopener noreferrer">Consultar este servicio</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Inspección pre compra</h3>
+            <p>Ideal para autos usados. Te ayudamos a detectar riesgos antes de cerrar el negocio.</p>
+            <div class="card-actions">
+              <a class="btn-service" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20o%20consultar%20por%20el%20servicio%20de%20Inspecci%C3%B3n%20pre%20compra." target="_blank" rel="noopener noreferrer">Consultar este servicio</a>
+            </div>
+          </div>
+          <div class="card">
+            <h3>Apoyo para negociar la compra</h3>
+            <p>Con una revisión previa, puedes negociar con mayor información y evitar sorpresas.</p>
+            <div class="card-actions">
+              <a class="btn-service" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20o%20consultar%20por%20el%20servicio%20de%20Apoyo%20para%20negociar%20la%20compra." target="_blank" rel="noopener noreferrer">Consultar este servicio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services-carousel-section" id="galeria-servicios">
+      <div class="container">
+        <div class="section-title">
+          <h2>Galería de servicios</h2>
+          <p>Desliza y revisa visualmente los principales servicios que puedes cotizar por WhatsApp.</p>
+        </div>
+        <div class="carousel-shell">
+          <button class="carousel-btn prev" type="button" aria-label="Anterior" onclick="scrollServices(-1)">‹</button>
+          <div class="carousel-track" id="servicesCarousel">
+
+            <article class="service-slide">
+              <div class="service-slide-image">
+                <img src="data:image/svg+xml;utf8,%0A%20%20%20%20%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20460%27%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cdefs%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3ClinearGradient%20id%3D%27g%27%20x1%3D%270%27%20x2%3D%271%27%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%270%25%27%20stop-color%3D%27%23eaf4fc%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3Cstop%20offset%3D%27100%25%27%20stop-color%3D%27%23d9edf9%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C/linearGradient%3E%0A%20%20%20%20%20%20%20%20%20%20%3C/defs%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20width%3D%27800%27%20height%3D%27460%27%20fill%3D%27url%28%23g%29%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27330%27%20width%3D%27800%27%20height%3D%27130%27%20fill%3D%27%23dfe8f0%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%27130%27%20y%3D%27155%27%20rx%3D%2726%27%20ry%3D%2726%27%20width%3D%27540%27%20height%3D%27120%27%20fill%3D%27%23ffffff%27%20stroke%3D%27%230f4c81%27%20stroke-width%3D%276%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27230%27%20cy%3D%27300%27%20r%3D%2744%27%20fill%3D%27%2317324f%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27570%27%20cy%3D%27300%27%20r%3D%2744%27%20fill%3D%27%2317324f%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%27280%27%20y%3D%27110%27%20width%3D%27120%27%20height%3D%2780%27%20rx%3D%2718%27%20fill%3D%27%2325d366%27%20opacity%3D%27.95%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%27M462%2098%20c42%2028%2048%2062%2022%2090%20c-18%2020%20-18%2034%20-6%2054%20h-52%20c-18%20-20%20-18%20-34%200%20-54%20c28%20-28%2024%20-62%2036%20-90z%27%20fill%3D%27%230f4c81%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctext%20x%3D%2746%27%20y%3D%2758%27%20font-size%3D%2734%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%20fill%3D%27%230f4c81%27%3ECambio%20de%20aceite%3C/text%3E%0A%20%20%20%20%20%20%20%20%3C/svg%3E" alt="Cambio de aceite y filtros" />
+              </div>
+              <div class="service-slide-body">
+                <h3>Cambio de aceite y filtros</h3>
+                <p>Mantención preventiva para cuidar el motor y evitar problemas mayores.</p>
+                <div class="card-actions">
+                  <a class="btn-service" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20o%20consultar%20por%20el%20servicio%20de%20Cambio%20de%20aceite%20y%20filtros." target="_blank" rel="noopener noreferrer">Consultar este servicio</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-slide">
+              <div class="service-slide-image">
+                <img src="data:image/svg+xml;utf8,%0A%20%20%20%20%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20460%27%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20width%3D%27800%27%20height%3D%27460%27%20fill%3D%27%23e9f4fb%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27335%27%20width%3D%27800%27%20height%3D%27125%27%20fill%3D%27%23dce8f3%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%27160%27%20y%3D%27150%27%20rx%3D%2724%27%20ry%3D%2724%27%20width%3D%27470%27%20height%3D%27115%27%20fill%3D%27%23fff%27%20stroke%3D%27%230f4c81%27%20stroke-width%3D%276%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27250%27%20cy%3D%27295%27%20r%3D%2742%27%20fill%3D%27%2317324f%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27540%27%20cy%3D%27295%27%20r%3D%2742%27%20fill%3D%27%2317324f%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%27555%27%20y%3D%2782%27%20rx%3D%2718%27%20ry%3D%2718%27%20width%3D%27110%27%20height%3D%27155%27%20fill%3D%27%23fff%27%20stroke%3D%27%230f4c81%27%20stroke-width%3D%276%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%27578%27%20y%3D%27108%27%20width%3D%2764%27%20height%3D%2758%27%20rx%3D%2710%27%20fill%3D%27%2325d366%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27610%27%20cy%3D%27194%27%20r%3D%2712%27%20fill%3D%27%230f4c81%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cline%20x1%3D%27555%27%20y1%3D%27240%27%20x2%3D%27505%27%20y2%3D%27280%27%20stroke%3D%27%230f4c81%27%20stroke-width%3D%278%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctext%20x%3D%2746%27%20y%3D%2758%27%20font-size%3D%2734%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%20fill%3D%27%230f4c81%27%3EDiagn%C3%B3stico%3C/text%3E%0A%20%20%20%20%20%20%20%20%3C/svg%3E" alt="Diagnóstico básico" />
+              </div>
+              <div class="service-slide-body">
+                <h3>Diagnóstico básico</h3>
+                <p>Revisión inicial para detectar fallas y orientarte antes de reparar.</p>
+                <div class="card-actions">
+                  <a class="btn-service" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20o%20consultar%20por%20el%20servicio%20de%20Diagn%C3%B3stico%20b%C3%A1sico." target="_blank" rel="noopener noreferrer">Consultar este servicio</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-slide">
+              <div class="service-slide-image">
+                <img src="data:image/svg+xml;utf8,%0A%20%20%20%20%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20460%27%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20width%3D%27800%27%20height%3D%27460%27%20fill%3D%27%23ebf5fc%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27330%27%20width%3D%27800%27%20height%3D%27130%27%20fill%3D%27%23dfe8f0%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%27170%27%20y%3D%27165%27%20rx%3D%2724%27%20ry%3D%2724%27%20width%3D%27420%27%20height%3D%27120%27%20fill%3D%27%23fff%27%20stroke%3D%27%230f4c81%27%20stroke-width%3D%276%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%27250%27%20y%3D%27122%27%20width%3D%2760%27%20height%3D%2744%27%20rx%3D%278%27%20fill%3D%27%230f4c81%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%27455%27%20y%3D%27122%27%20width%3D%2760%27%20height%3D%2744%27%20rx%3D%278%27%20fill%3D%27%2325d366%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%27M390%20185%20l-45%2055%20h34%20l-22%2045%20l72%20-70%20h-38%20l24%20-30z%27%20fill%3D%27%2325d366%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27245%27%20cy%3D%27300%27%20r%3D%2738%27%20fill%3D%27%2317324f%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27545%27%20cy%3D%27300%27%20r%3D%2738%27%20fill%3D%27%2317324f%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctext%20x%3D%2746%27%20y%3D%2758%27%20font-size%3D%2734%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%20fill%3D%27%230f4c81%27%3EBater%C3%ADa%20y%20arranque%3C/text%3E%0A%20%20%20%20%20%20%20%20%3C/svg%3E" alt="Batería y arranque" />
+              </div>
+              <div class="service-slide-body">
+                <h3>Batería y arranque</h3>
+                <p>Apoyo cuando el vehículo no parte o presenta fallas eléctricas básicas.</p>
+                <div class="card-actions">
+                  <a class="btn-service" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20o%20consultar%20por%20el%20servicio%20de%20Bater%C3%ADa%20y%20arranque." target="_blank" rel="noopener noreferrer">Consultar este servicio</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-slide">
+              <div class="service-slide-image">
+                <img src="data:image/svg+xml;utf8,%0A%20%20%20%20%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20460%27%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20width%3D%27800%27%20height%3D%27460%27%20fill%3D%27%23edf6fc%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27400%27%20cy%3D%27242%27%20r%3D%27110%27%20fill%3D%27%23fff%27%20stroke%3D%27%230f4c81%27%20stroke-width%3D%2710%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27400%27%20cy%3D%27242%27%20r%3D%2754%27%20fill%3D%27%23d9e8f4%27%20stroke%3D%27%230f4c81%27%20stroke-width%3D%278%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%27M475%20162%20q74%2030%2088%20110%20q-10%2068%20-64%20110%20l-55%20-54%20q24%20-18%2031%20-52%20q-4%20-38%20-34%20-58z%27%20fill%3D%27%2325d366%27%20opacity%3D%27.92%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27400%27%20cy%3D%27242%27%20r%3D%2714%27%20fill%3D%27%230f4c81%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%27215%27%20y%3D%27120%27%20rx%3D%2718%27%20ry%3D%2718%27%20width%3D%27118%27%20height%3D%2764%27%20fill%3D%27%23fff%27%20stroke%3D%27%230f4c81%27%20stroke-width%3D%275%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctext%20x%3D%2746%27%20y%3D%2758%27%20font-size%3D%2734%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%20fill%3D%27%230f4c81%27%3EFrenos%20y%20revisi%C3%B3n%3C/text%3E%0A%20%20%20%20%20%20%20%20%3C/svg%3E" alt="Frenos y revisión general" />
+              </div>
+              <div class="service-slide-body">
+                <h3>Frenos y revisión general</h3>
+                <p>Chequeo de seguridad y revisión general para conducir con más tranquilidad.</p>
+                <div class="card-actions">
+                  <a class="btn-service" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20o%20consultar%20por%20el%20servicio%20de%20Frenos%20y%20revisi%C3%B3n%20general." target="_blank" rel="noopener noreferrer">Consultar este servicio</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-slide">
+              <div class="service-slide-image">
+                <img src="data:image/svg+xml;utf8,%0A%20%20%20%20%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20460%27%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20width%3D%27800%27%20height%3D%27460%27%20fill%3D%27%23eaf4fb%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27332%27%20width%3D%27800%27%20height%3D%27128%27%20fill%3D%27%23dce8f3%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%27160%27%20y%3D%27170%27%20rx%3D%2726%27%20ry%3D%2726%27%20width%3D%27440%27%20height%3D%27105%27%20fill%3D%27%23fff%27%20stroke%3D%27%230f4c81%27%20stroke-width%3D%276%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27248%27%20cy%3D%27298%27%20r%3D%2740%27%20fill%3D%27%2317324f%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27525%27%20cy%3D%27298%27%20r%3D%2740%27%20fill%3D%27%2317324f%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27612%27%20cy%3D%27172%27%20r%3D%2758%27%20fill%3D%27none%27%20stroke%3D%27%2325d366%27%20stroke-width%3D%2712%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cline%20x1%3D%27650%27%20y1%3D%27210%27%20x2%3D%27710%27%20y2%3D%27270%27%20stroke%3D%27%2325d366%27%20stroke-width%3D%2714%27%20stroke-linecap%3D%27round%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctext%20x%3D%2746%27%20y%3D%2758%27%20font-size%3D%2734%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%20fill%3D%27%230f4c81%27%3EInspecci%C3%B3n%20pre%20compra%3C/text%3E%0A%20%20%20%20%20%20%20%20%3C/svg%3E" alt="Inspección pre compra" />
+              </div>
+              <div class="service-slide-body">
+                <h3>Inspección pre compra</h3>
+                <p>Te ayudamos a revisar autos usados antes de tomar la decisión de compra.</p>
+                <div class="card-actions">
+                  <a class="btn-service" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20o%20consultar%20por%20el%20servicio%20de%20Inspecci%C3%B3n%20pre%20compra." target="_blank" rel="noopener noreferrer">Consultar este servicio</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="service-slide">
+              <div class="service-slide-image">
+                <img src="data:image/svg+xml;utf8,%0A%20%20%20%20%20%20%20%20%3Csvg%20xmlns%3D%27http%3A//www.w3.org/2000/svg%27%20viewBox%3D%270%200%20800%20460%27%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20width%3D%27800%27%20height%3D%27460%27%20fill%3D%27%23eaf4fb%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%270%27%20y%3D%27330%27%20width%3D%27800%27%20height%3D%27130%27%20fill%3D%27%23dce8f3%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Crect%20x%3D%27155%27%20y%3D%27164%27%20rx%3D%2726%27%20ry%3D%2726%27%20width%3D%27450%27%20height%3D%27110%27%20fill%3D%27%23fff%27%20stroke%3D%27%230f4c81%27%20stroke-width%3D%276%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27246%27%20cy%3D%27300%27%20r%3D%2740%27%20fill%3D%27%2317324f%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ccircle%20cx%3D%27522%27%20cy%3D%27300%27%20r%3D%2740%27%20fill%3D%27%2317324f%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%27M618%20134%20l18%20-18%2048%2048%20-18%2018%20-18%20-5%20-44%2044%20-26%20-26%2044%20-44z%27%20fill%3D%27%2325d366%27/%3E%0A%20%20%20%20%20%20%20%20%20%20%3Ctext%20x%3D%2746%27%20y%3D%2758%27%20font-size%3D%2734%27%20font-family%3D%27Arial%27%20font-weight%3D%27700%27%20fill%3D%27%230f4c81%27%3ENegociaci%C3%B3n%20de%20compra%3C/text%3E%0A%20%20%20%20%20%20%20%20%3C/svg%3E" alt="Apoyo para negociar la compra" />
+              </div>
+              <div class="service-slide-body">
+                <h3>Apoyo para negociar la compra</h3>
+                <p>Con una revisión previa, puedes negociar con mejor información.</p>
+                <div class="card-actions">
+                  <a class="btn-service" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20o%20consultar%20por%20el%20servicio%20de%20Apoyo%20para%20negociar%20la%20compra." target="_blank" rel="noopener noreferrer">Consultar este servicio</a>
+                </div>
+              </div>
+            </article>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Siguiente" onclick="scrollServices(1)">›</button>
+        </div>
+        <div class="carousel-note">Puedes avanzar con las flechas o deslizar con el dedo en móvil.</div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>¿Por qué elegir Mecánica Integral?</h2>
+          <p>La idea no es solo arreglar un problema, sino darte tranquilidad y una atención que genere confianza.</p>
+        </div>
+        <div class="benefits">
+          <div class="benefit">
+            <h3>Ahorras tiempo</h3>
+            <p>Vamos a tu domicilio para evitar traslados innecesarios y simplificar la atención.</p>
+          </div>
+          <div class="benefit">
+            <h3>Confianza y explicación simple</h3>
+            <p>Te explicamos en palabras claras qué se observa en tu vehículo y qué conviene hacer.</p>
+          </div>
+          <div class="benefit">
+            <h3>Seguimiento real</h3>
+            <p>Llevamos ficha de mantención y recordatorios para próximos servicios cuando corresponda.</p>
+          </div>
+          <div class="benefit">
+            <h3>Mejor decisión de compra</h3>
+            <p>La inspección pre compra te ayuda a evitar errores y detectar costos ocultos antes de pagar.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-title">
+          <h2>Cómo funciona</h2>
+          <p>Un proceso simple pensado para que el cliente actúe rápido.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>1. Escribes por WhatsApp</h3>
+            <p>Nos envías tu comuna, tipo de vehículo y el servicio que necesitas.</p>
+          </div>
+          <div class="card">
+            <h3>2. Recibes orientación o cotización</h3>
+            <p>Te respondemos de forma clara para coordinar visita, diagnóstico o inspección.</p>
+          </div>
+          <div class="card">
+            <h3>3. Agendamos la atención</h3>
+            <p>Vamos a domicilio y dejamos seguimiento para próximos servicios si aplica.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container contact">
+        <div class="card">
+          <h3>Contacto directo</h3>
+          <p><strong>WhatsApp:</strong> +56 9 8128 5142</p>
+          <p><strong>Marca:</strong> Mecánica Integral</p>
+          <p><strong>Eslogan:</strong> Tu mecánico de confianza a domicilio</p>
+          <a class="btn btn-primary" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20servicios" target="_blank" rel="noopener noreferrer">Hablar ahora</a>
+        </div>
+        <div class="card">
+          <h3>Ideal para clientes que buscan</h3>
+          <p>• Mantención sin perder tiempo en traslados</p>
+          <p>• Revisar un auto usado antes de comprar</p>
+          <p>• Tener un mecánico de confianza para seguimiento</p>
+          <p>• Resolver problemas rápidos con orientación cercana</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta">
+          <h2>¿Necesitas una revisión, diagnóstico o inspección pre compra?</h2>
+          <p>Escríbenos por WhatsApp y cuéntanos tu comuna, vehículo y el servicio que necesitas. Te responderemos con orientación clara para ayudarte a avanzar.</p>
+          <a class="btn btn-primary" href="https://wa.me/56981285142?text=Hola%2C%20quiero%20cotizar%20un%20servicio%20de%20Mec%C3%A1nica%20Integral" target="_blank" rel="noopener noreferrer">Ir a WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      Mecánica Integral · Tu mecánico de confianza a domicilio
+    </div>
+  </footer>
+
+  <script>
+    function scrollServices(direction){
+      const track = document.getElementById('servicesCarousel');
+      if(!track) return;
+      const slide = track.querySelector('.service-slide');
+      const amount = slide ? slide.offsetWidth + 18 : 340;
+      track.scrollBy({ left: direction * amount, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
